@@ -1,0 +1,313 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Italic, sans-serif;
+    color: #333;
+    background-color: #f0f8ff;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #282c34;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.nav-link {
+    color: #ffffff;
+    margin: 0 15px;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffdd57;
+}
+
+/* Separator between sections */
+hr.separator {
+    border-top: 2px solid #ccc;
+    margin: 40px 0;
+}
+
+/* Section Styles */
+.section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    transition: opacity 0.5s;
+}
+
+#home {
+    background: url('images/wallpaper2.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+    padding: 50px;
+}
+
+/* Your Name Styling */
+.name-container {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 3em;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    position: relative;
+}
+
+/* Glow Effect on Hover */
+.name-container h1 {
+    transition: text-shadow 0.3s ease;
+}
+
+.name-container h1:hover {
+    text-shadow: 0 0 10px #ffdd57, 0 0 20px #ffdd57, 0 0 30px #ffdd57;
+}
+
+/* Subtitle Below the Name */
+.subtitle-container {
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: #333;
+    position: relative;
+}
+
+/* Optional Animation Background (if used for your effect) */
+.animation-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: url('images/wallpaper1.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.1;
+}
+
+/* Skill Section Styles */
+#skills {
+    background: linear-gradient(to right, #ddcfa6, #d5adf0); /* Gradient from light blue to cyan */
+    color: rgb(110, 56, 115);  /* Ensure text is readable on the gradient */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Skill Container Styles */
+.skill-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Remove rectangular container style */
+.skill-item {
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+/* Skill Image Styling */
+.skill-item img {
+    width: 250px;  /* You can adjust the size as needed */
+    height: 250px; /* You can adjust the size as needed */
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Highlight effect on hover */
+.skill-item:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.skill-item:hover img {
+    transform: scale(1.2);
+}
+
+/* Projects Section Styles */
+#projects {
+    background: linear-gradient(to right, #f6edb6, #a7eaf5); /* Gradient for Projects section */
+    color: #7281ef; /* Green color */
+    text-shadow: 0px 0px 10px #4fbdec; /* Blue glow effect */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.project-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 280px; /* Adjusted for rectangular shape */
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-item img {
+    width: 100%;
+    height: 150px; /* Maintain rectangular shape */
+    object-fit: cover; /* Ensures the image fits within the box */
+}
+
+.project-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.project-description {
+    font-size: 1em;
+    color: #555;
+    margin: 0 10px 20px 10px;
+    line-height: 1.6;
+}
+
+/* Highlight project name on hover */
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-item:hover .project-title {
+    color: #f8da7f; /* Change the color on hover */
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* About Section Styles */
+#about {
+    background: linear-gradient(to right, #fcefb4, #f494bf); /* Gradient background for About Me section */
+    color: rgb(253, 190, 113); /* Ensures text is readable on gradient */
+    padding: 50px 20px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+    font-size: 1.1em;
+}
+
+/* Custom styling for the "Hello!" text in About Me section */
+.about-text h1 {
+    font-family: 'Roboto', sans-serif; /* Replace 'Roboto' with your chosen font */
+    color: #cd3d72; /* Green color */
+    text-shadow: 0px 0px 10px #e87cc2; /* Blue glow effect */
+    font-size: 3em; /* Larger font size */
+    margin-bottom: 20px;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #f74896;
+}
+
+.about-image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-image img {
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* Section Padding for Home */
+#home {
+    padding: 100px 20px;
+}
+
+/* Contact Section at the Bottom */
+.contact-section {
+    width: 100%;
+    background-color: #e7deb6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;  /* Ensures it sticks at the bottom */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 0.9em;
+    }
+    .skill-item {
+        width: 150px;
+        padding: 15px;
+    }
+    .skill-item img {
+        width: 80px;
+        height: 80px;
+    }
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-image img {
+        width: 70%;
+    }
+}
+
+/* Styling for Skills and Projects Section Headings */
+#skills h2 {
+    font-size: 3em; /* Increases font size */
+    color: #7e318e; /* Green color for 'Skills' text */
+    text-shadow: 0 0 10px #b56ae3; /* Green glow effect for 'Skills' */
+    margin-bottom: 20px; /* Adds some spacing below the heading */
+}
+
+#projects h2 {
+    font-size: 3em; /* Increases font size */
+    color: #1b8e77; /* Tomato red color for 'Projects' text */
+    text-shadow: 0 0 10px #22eeee; /* Orange glow effect for 'Projects' */
+    margin-bottom: 20px; /* Adds some spacing below the heading */
+}
