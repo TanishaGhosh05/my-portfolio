@@ -57,7 +57,7 @@ hr.separator {
 }
 
 #home {
-    background: url('images/wallpaper2.jpeg') no-repeat center center fixed;
+    background: url('./images/wallpaper2.jpeg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
